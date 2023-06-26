@@ -1,0 +1,17 @@
+<div>
+
+ <div></div>
+
+ <div></div>
+
+</div>
+
+
+
+
+
+display: flex; // Elemente frei platzieren
+
+justify-content: center; // Elemente auf der X-Achse zentrieren (horizontale)
+
+align-items: center; // Elemente auf der Y-Achse verteilen / zentrieren (vertikale)

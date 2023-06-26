@@ -1,0 +1,736 @@
+<html>
+    
+    <title>Sakura Ramen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+
+    <head>
+
+        <style>
+            html {
+				scroll-behavior: smooth;
+			}
+            body {
+                margin: 0px;                
+            }
+            h2 {
+                color: rgb(151, 2, 2);
+                font-family: 'Economica', sans-serif;
+                font-weight: bold;
+                font-size: 60px;
+                display: flex;
+                justify-content: center;
+            }
+            h3 {
+                display: flex;
+                justify-content: center;             
+                font-family: 'Raleway', sans-serif;
+            }
+            h4 {
+                font-family: 'Economica', sans-serif;
+                font-weight: bold;
+                color: black;
+                font-size: 50px;
+            }
+            .header {
+                background-image: url('./data/bgr1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+                height: 100vh;
+                width: 100%;
+                margin: 0px;
+            }
+            .section1 {
+                background-color: white;
+                height: 550px;
+                width: 100%;
+                margin: 0px;
+            }
+            .section2 {
+                background-image: url('./data/background.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;            
+                height: 1600px;
+                width: 100%;
+                margin: 0px;
+            }
+            .section3 {
+                background-color: white;
+                height: 700px;
+                width: 100%;
+            }
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+            }       
+            .navbarlogo {
+                margin: 15px;
+                padding: 30px;
+
+            }
+            .navbarlogo img {
+                width: 80px;
+                height: 80px;
+
+            }
+            .navbarbottoms {
+                margin-top: 4vh;
+                margin-right: 2vh;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+            }
+            .navbarbottoms a {
+				color: white;
+            	font-size: 18px;
+				text-decoration: none;
+			}
+			.navbarbottoms a:hover {
+				text-decoration: none;
+				color: rgb(201, 201, 201);
+			}
+            .headline {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                margin-top: 10vh;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .headline2 {
+                font-family: 'Raleway', sans-serif;
+                font-weight: normal;
+                font-size: 18px;
+                margin-top: -66px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }    
+            .button {
+                background-color: red;
+                height: 30px;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 200px;
+                border-color: white;
+                border: solid 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2px;
+                padding-top: 10px;
+                padding-bottom: 8px;
+            }
+            .button img {
+                padding-right: 5px;
+
+
+            }
+
+            .button:hover {
+                text-decoration: none;
+                background-color: rgb(121, 3, 3);
+            }
+            .sec1hto {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-family: 'Economica', sans-serif;
+                font-weight: bold;
+                font-size: 40px;
+                color: black;
+                text-align: center;
+            }
+            .sec2menu {
+                display: flex;
+                justify-content: center;
+
+            }
+            table {
+                display: table;
+                border-collapse: separate;
+                box-sizing: border-box;
+                border-spacing: 0px 10px;
+                border-color: grey;
+            }
+            tbody {
+                display: table-row-group;
+                vertical-align: middle;
+            }
+            tr {
+                display: table-row;
+            }    
+            .section2 td {
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+                color: rgb(100, 100, 100);
+                padding-left: 0px;
+                padding-right: 170px;
+            }
+            .footer {
+                background-color: white;
+                height: 15vh;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .footerlogo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                margin-bottom: 5vh;
+                margin-left: 5vh;
+            }
+            .footerlogo:hover {
+                filter: brightness(60%);
+            }
+            .footerimg {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end ;
+                margin-right: 5vh;
+                margin-bottom: 5vh;
+            }
+            .imgflag {
+                width: 30%;
+            }
+
+            @media (max-width: 1000px ){
+
+                .hide-mobile {
+                    display: none;
+                }
+
+                .headline {
+                    font-size: 3.6em;
+                    text-align: center;
+                
+                }
+                .headline2 {
+                    font-size: 0.7em;
+
+                }
+                .navbarlogo img {
+                    width: 135px;
+                    height: 135px;
+                }
+                .sec1hto {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 4em;
+
+                }
+                .section1 {
+                    height: 1500px;
+                }
+                .section1 img {
+                    height: 180px;
+                    width: 180px;
+                }
+                h2 {
+                    font-size: 100px;
+                    text-align: center;
+                }
+                .sec2menu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .section2{
+                    height: 2700px;
+                }
+                .sec2menu2 {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    padding: 50px;
+                }
+                .sec2menu2center {
+                    padding-left: 200px;
+                }
+                h4 {
+                    text-align: center;
+                    padding-right: 220px;
+                }
+                h3 {
+                    font-size: 2.0em;
+                }
+                .section3 {
+                    height: 850px;
+                }
+
+            }
+            /*
+            @media(max-width 1000px),(max-height: 700px){
+
+
+
+
+            }
+            @media(max-width 1000px),(max-height: 700px){
+
+
+
+
+            }
+            @media(max-width 1000px),(max-height: 700px){
+
+
+
+
+            }
+            @media(max-width 1000px),(max-height: 700px){
+
+
+
+
+            }
+            @media(max-width 1000px),(max-height: 700px){
+
+
+
+
+            }
+            */
+
+        </style>
+
+    </head>
+
+    <body id="addTranslategerman">
+        <div class="header">
+        
+            <div class="navbar " id="Start">
+                <div class="navbarlogo">
+                    <img src="data/saku.png">
+                </div>
+                <div class="navbarbottoms hide-mobile">
+                <a href='#menunavbar'>MENU</a> &emsp;&emsp;&ensp;
+                <a href='#locnavbar'>LOCATIONS</a> &emsp;&emsp;&ensp;
+                <a href='#abonavbar'>ABOUT</a> &emsp;&emsp;&ensp;
+                
+                <a class="button" href="tel:0176 54564534"><img src="./data/phone.png" width="20">
+                     0176 54564534</a>      
+                </a>               
+                &ensp;
+                <a class="button" onclick="addTranslategerman()">
+                <img src="./data/germany.png" class="imgflag">
+                </a>
+                &ensp;
+
+                <a href="./index.html" class="button">
+                    <img src="./data/england.png" class="imgflag">
+                </a>
+             
+
+                &ensp;             
+                &ensp;
+            </div>    
+
+                </div>
+            <div class="headline">
+                <h1>SAKURA RAMEN</h1>
+                
+                <div class="headline2">
+                    THE BEST RAMEN IN TOWN </div>
+
+            </div>            
+        </div>
+
+          
+        </div>
+        <div class="section1">
+            <div><h2>
+                HOW TO ORDER
+            </h2></div>
+            <div class="sec1hto">
+                <div>
+                    <img src="./data/bowl_icon.jpg"><br><br>
+                    Pick <br>your Noodle
+
+                </div>
+                <div>
+                    <img src="./data/broth_icon.png"><br><br>
+                    Pick<br>Your Broth
+
+
+                </div>
+                <div>
+                    <img src="./data/eggs_icon.jpg"><br><br>
+                    Add Your <br>Toppings
+                    
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="section2" id="menunavbar">
+            <div>
+                <br>
+                <h2>OUR MENU</h2>
+            </div> 
+                <div class="sec2menu">
+
+                    <div>
+                    <img src="./data/r1.png">
+                    </div>
+                    
+                    <div class="sec2menu2center">
+                        <h4>Tonkasu Ramen</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>CHICKEN</td>
+                                    <td>11.95€</td>
+                                </tr>
+                                <tr>
+                                    <td>BEEF</td>
+                                    <td>12.95€</td>
+                                </tr>
+                                <tr>
+                                    <td>SHRIMP</td>
+                                    <td>13.95€</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div> 
+
+                <div class="sec2menu sec2menu2">    
+                    <div class="sec2menu2center">
+                        <h4>Spicy Miso Ramen</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>CHICKEN</td>
+                                    <td>11.95€</td>
+                                </tr>
+                                <tr>
+                                    <td>BEEF</td>
+                                    <td>12.95€</td>
+                                </tr>
+                                <tr>
+                                    <td>SHRIMP</td>
+                                    <td>13.95€</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  
+                    <div>
+                        <img src="./data/r2.png">
+                        
+                    </div>
+                
+                </div>
+                <div class="sec2menu">
+
+                    <div>
+                        <img src="./data/r3.png">
+                    </div>
+                    
+                    <div class="sec2menu2center">
+                        <h4>Shio Ramen</h4>
+                        <table>
+                            <tbody>
+
+                                <tr>
+                                    <td>CHICKEN</td>
+                                    <td>11.95€</td>
+                                </tr>
+                                <tr>
+                                    <td>BEEF</td>
+                                    <td>12.95€</td>
+                                </tr>
+                                <tr>
+                                    <td>SHRIMP</td>
+                                    <td>13.95€</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>    
+                    </div>
+                    
+                </div>
+            </div>
+            
+        
+            
+        </div>
+        <div class="section3" id="locnavbar">
+
+            <div>
+                <h2>FIND US AT</h2>
+                <h3> <img src="./data/LO.png" width="20">&ensp;Kapuzinierstraße 31, München, BY80337 </h3> <br>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2079671773813!2d11.559014616556135!3d48.125512659979016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1651054492449!5m2!1sde!2sde" 
+                width="100%" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+
+        </div>
+        <div class="footer" id="abonavbar"> 
+            
+            
+                <div class="footerlogo">
+                <a href="#Start">
+                    <img src="./data/saklogo.png">
+                </a><br><br>
+                </div>
+                
+                <div class="footerimg">
+                    &emsp;&emsp;&emsp;&emsp;
+                    <a href= "https://de-de.facebook.com/" target="blank">
+                        <img src="./data/fb.png" width="60" height="60"></a>
+                    &emsp;&emsp;&emsp;&emsp;
+                    <a href= "https://www.instagram.com/" target="blank">
+                        <img src="./data/ins.png" width="60" height="60">
+                    </a>
+                    &emsp;&emsp;&emsp;&emsp;
+                    <a href= "https://www.tripadvisor.de/" target="blank">
+                        <img src="./data/tripad.png" width="60" height="60">
+                    </a>
+                </div>
+               
+        </div>
+        <script>
+            function addTranslategerman(){
+                document.getElementById('addTranslategerman').innerHTML = `
+
+                    <div class="header">
+                    
+                        <div class="navbar " id="Start">
+                            <div class="navbarlogo">
+                                <img src="data/saku.png">
+                            </div>
+                            <div class="navbarbottoms hide-mobile">
+                            <a href='#menunavbar'>MENÜ</a> &emsp;&emsp;&ensp;
+                            <a href='#locnavbar'>ANKUNFT</a> &emsp;&emsp;&ensp;
+                            <a href='#abonavbar'>ÜBER UNS</a> &emsp;&emsp;&ensp;
+                            
+                            <a class="button" href="tel:0176 54564534"><img src="./data/phone.png" width="20">
+                            0176 54564534</a>      
+                            </a>               
+                            &ensp;
+
+                            <a class="button" onclick="addTranslategerman()">
+                            <img src="./data/germany.png" class="imgflag">
+                            </a>
+                            &ensp;
+
+                            <a href="./index.html" class="button">
+                                <img src="./data/england.png" class="imgflag">
+                            </a>
+                            &ensp;             
+                            &ensp;
+                        </div>    
+
+                            </div>
+                        <div class="headline">
+                            <h1>SAKURA RAMEN</h1>
+                            
+                            <div class="headline2">
+                                DER BESTE RAMEN IN DER STADT </div>
+
+                        </div>            
+                    </div>
+
+                    
+                    </div>
+                    <div class="section1">
+                        <div><h2>
+                            BESTELLVORGANG
+                        </h2></div>
+                        <div class="sec1hto">
+                            <div>
+                                <img src="./data/bowl_icon.jpg"><br><br>
+                                wähle <br>deine Nudeln
+
+                            </div>
+                            <div>
+                                <img src="./data/broth_icon.png"><br><br>
+                                wähle<br>deine Brühe
+
+
+                            </div>
+                            <div>
+                                <img src="./data/eggs_icon.jpg"><br><br>
+                                füge deine<br>Zutaten hinzu
+                                
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="section2" id="menunavbar">
+                        <div>
+                            <br>
+                            <h2>UNSER MENÜ</h2>
+                        </div> 
+                            <div class="sec2menu">
+
+                                <div>
+                                <img src="./data/r1.png">
+                                </div>
+                                
+                                <div class="sec2menu2center">
+                                    <h4>Tonkasu Ramen</h4>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>HÜHNCHEN</td>
+                                                <td>11.95€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RIND</td>
+                                                <td>12.95€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SHRIMPS</td>
+                                                <td>13.95€</td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div> 
+
+                            <div class="sec2menu sec2menu2">    
+                                <div class="sec2menu2center">
+                                    <h4>Spicy Miso Ramen</h4>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <tr>
+                                                <td>HÜHNCHEN</td>
+                                                <td>11.95€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RIND</td>
+                                                <td>12.95€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SHRIMPS</td>
+                                                <td>13.95€</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            
+                                <div>
+                                    <img src="./data/r2.png">
+                                    
+                                </div>
+                            
+                            </div>
+                            <div class="sec2menu">
+
+                                <div>
+                                    <img src="./data/r3.png">
+                                </div>
+                                
+                                <div class="sec2menu2center">
+                                    <h4>Shio Ramen</h4>
+                                    <table>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>HÜHNCHEN</td>
+                                                <td>11.95€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RIND</td>
+                                                <td>12.95€</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SHRIMPS</td>
+                                                <td>13.95€</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    
+                        
+                    </div>
+                    <div class="section3" id="locnavbar">
+
+                        <div>
+                            <h2>FINDE UNS</h2>
+                            <h3> <img src="./data/LO.png" width="20">&ensp;Kapuzinierstraße 31, München, BY80337 </h3> <br>
+                        </div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2079671773813!2d11.559014616556135!3d48.125512659979016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1651054492449!5m2!1sde!2sde" 
+                            width="100%" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+
+
+                    </div>
+                    <div class="footer" id="abonavbar"> 
+                        
+                        
+                            <div class="footerlogo">
+                            <a href="#Start">
+                                <img src="./data/saklogo.png">
+                            </a><br><br>
+                            </div>
+                            
+                            <div class="footerimg">
+                                &emsp;&emsp;&emsp;&emsp;
+                                <a href= "https://de-de.facebook.com/" target="blank">
+                                    <img src="./data/fb.png" width="60" height="60"></a>
+                                &emsp;&emsp;&emsp;&emsp;
+                                <a href= "https://www.instagram.com/" target="blank">
+                                    <img src="./data/ins.png" width="60" height="60">
+                                </a>
+                                &emsp;&emsp;&emsp;&emsp;
+                                <a href= "https://www.tripadvisor.de/" target="blank">
+                                    <img src="./data/tripad.png" width="60" height="60">
+                                </a>
+                            
+                            </div>
+                        
+                    </div>
+        `;
+        }
+        </script>
+    
+    
+    </body>
+
+
+
+
+
+</html>
